@@ -120,7 +120,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8Ws-xx-ELb">
-                                                    <rect key="frame" x="16" y="11" width="288" height="189"/>
+                                                    <rect key="frame" x="16" y="-11" width="288" height="189"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -154,7 +154,7 @@
                     <connections>
                         <outlet property="datePicker" destination="DYv-NE-uCT" id="Py8-Hz-2sJ"/>
                         <outlet property="nameField" destination="Dv5-PM-7fu" id="nZU-2t-yPi"/>
-                        <outlet property="noteview" destination="8Ws-xx-ELb" id="JWP-MC-Ke3"/>
+                        <outlet property="noteView" destination="8Ws-xx-ELb" id="JWP-MC-Ke3"/>
                         <outlet property="saveBarButton" destination="9SV-eN-ZDH" id="qjN-zd-3WR"/>
                     </connections>
                 </tableViewController>
