@@ -36,6 +36,7 @@ class ToDoDetailTableViewController: UITableViewController {
         
         if toDoItem == nil {
             toDoItem = ToDoItem(name: "", date: Date().addingTimeInterval(24*60*60), notes: "", reminderSet: false)
+            print("toDoItem 👍🏻")
         }
         updateUserInterface()
         }
@@ -50,6 +51,7 @@ class ToDoDetailTableViewController: UITableViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        print("name: \(toDoItem.name), date: \(toDoItem.date)")
         toDoItem = ToDoItem(name: nameField.text!, date: datePicker.date, notes: noteView.text, reminderSet: reminderSwitch.isOn)
     
     }

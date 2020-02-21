@@ -82,7 +82,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dv5-PM-7fu">
-                                                    <rect key="frame" x="12" y="5" width="287" height="34"/>
+                                                    <rect key="frame" x="11" y="5" width="286" height="34"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -174,7 +174,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="9SV-eN-ZDH">
                             <connections>
-                                <segue destination="Vpq-6i-9kw" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="soK-Q9-cyI"/>
+                                <segue destination="Vpq-6i-9kw" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="Cyq-3X-1ut"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -184,7 +184,7 @@
                         <outlet property="nameField" destination="Dv5-PM-7fu" id="nZU-2t-yPi"/>
                         <outlet property="noteView" destination="8Ws-xx-ELb" id="JWP-MC-Ke3"/>
                         <outlet property="reminderSwitch" destination="pKX-VA-dui" id="end-dT-sRZ"/>
-                        <outlet property="saveBarButton" destination="9SV-eN-ZDH" id="qjN-zd-3WR"/>
+                        <outlet property="saveBarButton" destination="9SV-eN-ZDH" id="LTg-na-jch"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tj2-wZ-PQe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -33,6 +33,7 @@ class ToDoListViewController: UIViewController {
              let jsonDecoder = JSONDecoder()
              do {
                  toDoItems = try jsonDecoder.decode(Array<ToDoItem>.self, from: data)
+
                  tableView.reloadData()
              }catch{
                       print("😡 ERROR: Could not load data \(error.localizedDescription)")
@@ -54,7 +55,7 @@ class ToDoListViewController: UIViewController {
      
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "showDetail  " {
+        if segue.identifier == "showDetail" {
             let destination = segue.destination as! ToDoDetailTableViewController
             let selectedIndexPath = tableView.indexPathForSelectedRow!
             destination.toDoItem = toDoItems[selectedIndexPath.row]
