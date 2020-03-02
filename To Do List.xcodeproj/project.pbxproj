@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		820606E223ED325200080733 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820606E123ED325200080733 /* ToDoItem.swift */; };
+		825E415F240CCDC400518D90 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E415E240CCDC400518D90 /* ListTableViewCell.swift */; };
 		826BF27223E7EC4900ED172E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BF27123E7EC4900ED172E /* AppDelegate.swift */; };
 		826BF27423E7EC4900ED172E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BF27323E7EC4900ED172E /* SceneDelegate.swift */; };
 		826BF27623E7EC4900ED172E /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BF27523E7EC4900ED172E /* ToDoListViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		820606E123ED325200080733 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		825E415E240CCDC400518D90 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		826BF26E23E7EC4900ED172E /* To Do List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "To Do List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		826BF27123E7EC4900ED172E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		826BF27323E7EC4900ED172E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +67,7 @@
 				820606E123ED325200080733 /* ToDoItem.swift */,
 				826BF27523E7EC4900ED172E /* ToDoListViewController.swift */,
 				826BF2A523E80ADD00ED172E /* ToDoDetailTableViewController.swift */,
+				825E415E240CCDC400518D90 /* ListTableViewCell.swift */,
 				826BF27723E7EC4900ED172E /* Main.storyboard */,
 				826BF27A23E7EC4A00ED172E /* Assets.xcassets */,
 				826BF27C23E7EC4A00ED172E /* LaunchScreen.storyboard */,
@@ -149,6 +152,7 @@
 				820606E223ED325200080733 /* ToDoItem.swift in Sources */,
 				826BF2A623E80ADD00ED172E /* ToDoDetailTableViewController.swift in Sources */,
 				826BF27423E7EC4900ED172E /* SceneDelegate.swift in Sources */,
+				825E415F240CCDC400518D90 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

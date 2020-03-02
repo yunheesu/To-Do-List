@@ -42,7 +42,7 @@ class ToDoListViewController: UIViewController {
         }
     }
     
-    func setNottifications() {
+    func setNotifications() {
         guard toDoItems.count > 0 else {
             return
         }
@@ -113,9 +113,9 @@ class ToDoListViewController: UIViewController {
              } catch{
                  print("😡 ERROR: Could not save data \(error.localizedDescription)")
              }
-            setNottifications()
+            setNotifications()
             }
-     
+      
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetail" {
@@ -157,14 +157,25 @@ class ToDoListViewController: UIViewController {
     
 }
 
-extension ToDoListViewController: UITableViewDelegate, UITableViewDataSource {
+extension ToDoListViewController: UITableViewDelegate, UITableViewDataSource, ListTableViewCellDelegates {
+    func checkBoxToggle(sender: ListTableViewCell) {
+        if let selectedIndexPath = tableView.indexPath(for: sender){
+            toDoItems[selectedIndexPath.row].completed = !toDoItems[selectedIndexPath.row].completed
+            tableView.reloadRows(at: [selectedIndexPath], with: .automatic)
+            saveData()
+
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return toDoItems.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = toDoItems[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ListTableViewCell
+        cell.delegate = self
+        cell.nameLabel.text = toDoItems[indexPath.row].name
+        cell.checkBoxButton.isSelected = toDoItems[indexPath.row].completed
         return cell
         
     }
